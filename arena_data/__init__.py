@@ -34,7 +34,7 @@ def new_cards(card_path: Path, loc_path: Path, sql_path: Path, new_set_code: str
 
 def new_arts(card_path: Path, loc_path: Path, sql_path: Path, set_code: str = None) -> Set[Tuple[str, str]]:
     """
-    Finds cards in the Arena data files that aren't yet in MTGJSON
+    Finds art credits in the Arena data files that aren't yet in MTGJSON
     :param card_path: Path to the cards Arena data file
     :param loc_path: Path to the loc Arena data file
     :param sql_path: Path to the MTGSQLive database

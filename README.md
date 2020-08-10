@@ -20,7 +20,7 @@ Secondly, you'll need a copy of the MTGSQLive database. You can download it [her
 
 ## Usage
 ### New Arts
-Finds cards in the Arena data files that aren't in a list of sets we would expect
+Finds art credits in the Arena data files that aren't yet in MTGJSON
 ```
 usage: arena-data new-art [-h] [--loc-path LOC_PATH] [--sql-path SQL_PATH]
                           [--set-code SET_CODE]
