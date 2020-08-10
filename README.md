@@ -20,10 +20,20 @@ Secondly, you'll need a copy of the MTGSQLive database. You can download it [her
 
 ### New Arts
 ```
-usage: Calculates interesting trivia from the MTG Arena data files new-art
-       [-h] [--loc-path LOC_PATH] [--sql-path SQL_PATH] [--set-code SET_CODE]
-       card_path
-Calculates interesting trivia from the MTG Arena data files new-art: error: the following arguments are required: card_path
+usage: arena-data new-art [-h] [--loc-path LOC_PATH] [--sql-path SQL_PATH]
+                          [--set-code SET_CODE]
+                          card_path
+
+positional arguments:
+  card_path            Path to the card data file
+
+optional arguments:
+  -h, --help           show this help message and exit
+  --loc-path LOC_PATH  Path to the localisation data file
+  --sql-path SQL_PATH  Path to MTGJSON AllPrintings SQL database, e.g.
+                       https://mtgjson.com/api/v5/AllPrintings.sql
+  --set-code SET_CODE  Optionally, a set code to restrict the search to, e.g.
+                       "AKR" (Amonkhet Remastered)
 ```
 
 

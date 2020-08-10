@@ -9,7 +9,7 @@ def print_tuples(iterable: Iterable[Tuple]):
 
 
 def get_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser('Calculates interesting trivia from the MTG Arena data files')
+    parser = argparse.ArgumentParser(description='Calculates interesting trivia from the MTG Arena data files')
     subparsers = parser.add_subparsers()
 
     new_art_cmd = subparsers.add_parser('new-art', help='Finds cards with new, unreleased art')
